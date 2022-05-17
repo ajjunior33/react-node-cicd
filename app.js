@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require("path");
 
-app.use(express.static(path.join(__dirname, '/frontend/build')));
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
 app.get('/names', (request, response) => {
 	return response.send("Telmo");
